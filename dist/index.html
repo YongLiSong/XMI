@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/css/index.css">
+  <link rel="stylesheet" href="../src/css/reset.css">
+  <script src="../src/lib/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <div id="topList" class="container-fulid clearfix">
+    <div class="container clearfix">
+      <ul class="listLeft floatL">
+        <li>
+          <a href="#">小米商城</a>
+        </li>
+        <li>
+          <a href="#">MIUI</a>
+        </li>
+        <li>
+          <a href="#">IoT</a>
+        </li>
+        <li>
+          <a href="#">云服务</a>
+        </li>
+        <li>
+          <a href="#">金融</a>
+        </li>
+        <li>
+          <a href="#">有品</a>
+        </li>
+        <li>
+          <a href="#">小爱开放平台</a>
+        </li>
+        <li>
+          <a href="#">企业团购</a>
+        </li>
+        <li>
+          <a href="#">资质证照</a>
+        </li>
+        <li>
+          <a href="#">协议规则</a>
+        </li>
+        <li class="ercode"><span>下载app</span>
+          <a href="#" class="ercodemar">
+            <p>
+              <img src="../src/images/indeximg/download.png" alt="">
+              <span style="color: black;">小米商城APP</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Select Location
+          </a>
+          </li>
+      </ul>
+      <ul class="listRight floatR">
+        <li>登录</li>
+        <li>注册</li>
+        <li>消息通知</li>
+        <li class="carbtn">购物车(<span>0</span>)
+          <p id="carinfo" class="none"></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--  -------------以上为通用顶部栏---------------- -->
+  <div class="container nav clearfix">
+    <h1 id="logo" class=" floatL">
+        小米官网
+      <img src="../src/images/indeximg/mi-logo.png" alt="">
+    </h1>
+    <ul class="navlist">
+      <li></li>
+      <li>小米手机</li>
+      <li>Redmi 红米</li>
+      <li>电视</li>
+      <li>笔记本</li>
+      <li>家电</li>
+      <li>路由器</li>
+      <li>智能硬件</li>
+      <li>服务</li>
+      <li>社区</li>
+      <li>
+        <input type="search">
+        <button></button>
+      </li>
+    </ul>
+  </div>
+  <script src="../src/js/top.js"></script>
+  <script>
+    $logo = $('#logo');
+    $logoimg = $('#logo img')
+    $logo.on('mouseenter',function(){
+      $logoimg.attr('src','../src/images/indeximg/mi-home.png')
+    })
+  </script>
+</body>
+
+</html>

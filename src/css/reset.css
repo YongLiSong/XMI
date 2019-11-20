@@ -1,0 +1,15 @@
+html,body,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,dl,ul,ol,li,img,input,fieldset,legend,figure,figcaption{margin:0;padding:0;}
+ul,ol,li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight: normal;}
+b,strong{font-weight: normal;}
+em,i{font-style: normal;}
+a{text-decoration: none;}
+img{display: block;border: none;}
+input{outline: none;}
+body{
+    font-size:16px;
+}
+.clearfix:after{content:".";height:0;overflow: hidden;visibility: hidden;display: block;clear: both;}
+.clearfix{*zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
