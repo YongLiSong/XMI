@@ -119,15 +119,29 @@
   margin-right: 150px;
 }
 
+.navlist {
+  height: 100%;
+}
+
+.navlist a {
+  height: 100%;
+  width: 100%;
+  color: #000;
+}
+
+.navlist a:hover {
+  color: #ff6700;
+}
+
 .navlist li {
-  margin-top: 35px;
   float: left;
-  margin-left: 30px;
+  height: 100%;
+  padding-left: 30px;
+  line-height: 100px;
 }
 
 .navlist li:last-of-type {
   margin-right: 0;
-  margin-top: 20px;
 }
 
 .navlist li:last-of-type input {
@@ -145,4 +159,18 @@
   margin: -5px;
   padding: 19px;
   background: #fff;
+}
+
+.nav-two-list {
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  background: red;
+  border-top: 1px solid #b0b0b0;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.nav-two-list .nav-two-list-info {
+  height: 100%;
+  background: blue;
 }

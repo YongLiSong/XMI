@@ -1,24 +1,21 @@
-var $toplist = $('.listLeft li');
-var $ercodemar = $('.ercode');
+var $toplist = $('.listLeft li>a');
 var $carbtn = $('.carbtn');
 var $carinfo = $('#carinfo')
 var $spanNum = $('.carbtn span').text()
-$toplist.on('mouseenter',function(){
-    $(this).children().css('color','#ffffff')
-})
-$toplist.on('mouseout',function(){
-    $(this).children().css('color','#b0b0b0')
-})
+$toplist.on({mouseenter:function(){
+    $(this).css('color','#ffffff')
+},
+mouseout:function(){
+  $(this).css('color','#b0b0b0')
+}})
+
 
 $('.ercode').on('mouseenter',function(){
     $('.ercodemar').animate({
           height:148
     },200,'linear');
 })
-$('.ercodemar').on('mouseover',function(){
-    $('.ercodemar').css('height','148px')
-})
-$('.ercodemar').on('mouseout',function(){
+$('.ercodemar').on('mouseleave',function(){
     $('.ercodemar').animate({
           height:0
     },200,'linear');
